@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+.Square{
+    background-color: #ED6C0E;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.Card{
+    background-color: #FFEEE1;
+}
+.Card:hover{
+    background-color: #ED6C0E;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Card:hover .Square{
+    background-color: #FFEEE1;
 }
+.Card:hover p{
+    color: #fff;
+}
+.bgDark{
+    background: rgba(255, 255, 255, 0.46) ;
+backdrop-filter: blur(10    px);
+height: 500px;
+padding: 30px;
+width: 100% !important;
+}
+.MiniCard{
+    border-radius: 5px;
+background: #FFEEE1;
+;
+
+
+}
+.circle{
+    border-radius: 55px;
+    background: rgba(238, 159, 169, 0.30);
+    width: 89px;
+height: 32px;
+flex-shrink: 0;
+}
+.MiniCard:hover{
+background-color: #ED6C0E;
+}
+.MiniCard:hover p{
+    color: #ffff;
+}
+.MiniCard:hover .GetStarted{
+    color: #FFEEE1;
+}
+.MiniCard:hover  button  svg{
+    color: #FFEEE1;
+}
+.borderBottom{
+    border-bottom: 1px solid white;
+}
+/* Default styles for larger screens */
+/* Default styles for larger screens */
